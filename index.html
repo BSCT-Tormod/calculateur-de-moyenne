@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Calculateur de Moyenne</title>
+</head>
+<body>
+    <div class="average">
+        <h1>Moyenne générale :</h1>
+        <div class="average-note">
+            <p id="average-value">0</p>
+            <p id="average-decimal">.00</p>
+            <p id="average-scale">/20</p>
+        </div>
+    </div>
+    <div class="add-note">
+        <div class="note-value">
+            <input type="number" id="note-value" placeholder="10">
+            <p>sur</p>
+            <input type="number" id="note-scale" placeholder="20">
+        </div>
+        <input type="number" id="note-coef" placeholder="coefficient">
+        <input type="text" id="note-subject" placeholder="matière (optionnel)">
+        <button id="add-note" onclick="newNote()">Ajouter</button>
+        <button id="reset-button" onclick="reset()">Rénitialiser</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
